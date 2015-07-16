@@ -8,11 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloJenkinsController {
-	String message = "Its demo program has been deployed using Jenkins with Maven build on Tomcat7. Thanks!";
+	String message = "Its demo program has been deployed using Jenkins";
  
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(
-			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+			@RequestParam(value = "name", required = false, defaultValue = "Jenkin") String name) {
 		System.out.println("in controller");
  
 		ModelAndView mv = new ModelAndView("helloworld");
